@@ -15,6 +15,7 @@ https://maps.googleapis.com/maps/api/directions/json?arrival_time=1643724000&avo
 ## Next paste the full JSON response to this query here:
 
 ```
+<!---
 {
    "geocoded_waypoints" : [
       {
@@ -728,6 +729,7 @@ https://maps.googleapis.com/maps/api/directions/json?arrival_time=1643724000&avo
    ],
    "status" : "OK"
 }
+--->
 ```
 ____
 ## Rubric

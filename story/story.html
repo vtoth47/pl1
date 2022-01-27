@@ -19,6 +19,14 @@
           margin: 0;
           padding: 0;
         }
+        h1 {
+        font-size: 20px;  
+        color: black;
+        }
+        p {
+        font-size: 10px;  
+        color: black;
+        }
     </style>
     <script>
       let map;
@@ -43,22 +51,25 @@
       new google.maps.Marker({
         position: { lat: 43.679481, lng: -79.625636},
         map,
-        label: "4",
+        label: "3",
         });
       new google.maps.Marker({
         position: { lat: 48.569819, lng: -81.374618},
         map,
-        label: "5",
+        label: "4",
         }); 
        new google.maps.Marker({
         position: { lat: 52.818330, lng: -83.907099},
         map,
-        label: "6",
+        label: "5",
         }); 
       }
     </script>
   </head>
   <body>
+    <h1>My Commute to Work</h1>
+    <p>From 2015 to 2018 I worked at the Victor Diamond Mine in Northern Ontario.</p>
+    <p>The mine was a remote camp accesssible only by air where I would live for half the year on a 2 week on/off rotation.</p>
     <div id="map"></div>
     
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->

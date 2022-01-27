@@ -15,7 +15,7 @@ https://maps.googleapis.com/maps/api/directions/json?arrival_time=1643724000&avo
 ## Next paste the full JSON response to this query here:
 
 ```JSON
-
+See directions.js for the JSON code
 ```
 ____
 ## Rubric

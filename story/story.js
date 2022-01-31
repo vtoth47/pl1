@@ -13,6 +13,11 @@
             label: labels[i % labels.length],
           });
         });
+
+        
+
+      }
+
         // list of marker locations
         const locations = [
         { lat: 43.402192, lng: -80.354693},
@@ -21,7 +26,3 @@
         { lat: 48.569819, lng: -81.374618},
         { lat: 52.818330, lng: -83.907099},
         ];
-        
-
-      }
-

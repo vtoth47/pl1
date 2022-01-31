@@ -38,13 +38,13 @@ const infowindow = new google.maps.InfoWindow({
       content: contentString,
 });      
       
- marker.addListener("click", () => {
+marker.addListener("click", () => {
     infowindow.open({
       anchor: marker,
       map,
       shouldFocus: false,
     });
-  });
+});
 
 
 }

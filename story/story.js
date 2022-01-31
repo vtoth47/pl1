@@ -5,16 +5,26 @@ function initMap() {
             mapTypeId: 'hybrid',
       });
 
-      const marker1 = new google.maps.Marker({
+      var marker1 = new google.maps.Marker({
         position: { lat: 43.402192, lng: -80.354693},
         map,
         label: "1",
         });
-      const marker2 = new google.maps.Marker({
+      var infowindow1 = new google.maps.InfoWindow({
+            content: "<div class=infowindow><h1>Home</h1></div>"
+      });  
+      google.maps.event.addListener(marker1, 'click', infoCallback(infowindow1, marker1));
+      
+      var marker2 = new google.maps.Marker({
         position: { lat: 43.543167, lng: -79.694334},
         map,
         label: "2",
         });
+      var infowindow2 = new google.maps.InfoWindow({
+            content: "<div class=infowindow><h1>Parents</h1></div>"
+      });  
+      google.maps.event.addListener(marker2, 'click', infoCallback(infowindow2, marker2));      
+      
       const marker3 = new google.maps.Marker({
         position: { lat: 43.679481, lng: -79.625636},
         map,
@@ -31,13 +41,7 @@ function initMap() {
         label: "5",
         }); 
 
-      const contentString = 
-            "<h1>Home</h1>";
-
-      const infowindow = new google.maps.InfoWindow({
-            content: contentString,
-      });      
-
+     
       marker.addListener("click", () => {
           infowindow.open({
             anchor: marker,

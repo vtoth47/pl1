@@ -40,34 +40,25 @@
           zoom: 5,
           mapTypeId: 'hybrid',
         });
+        // Create an array of numbered characters used to label the markers.
+        const labels = "12345";
         
-      new google.maps.Marker({
-        position: { lat: 43.402192, lng: -80.354693},
-        map,
-        label: "1",
+        const markers = locations.map((location, i) => {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length],
+          });
         });
-      new google.maps.Marker({
-        position: { lat: 43.543167, lng: -79.694334},
-        map,
-        label: "2",
-        });
-      new google.maps.Marker({
-        position: { lat: 43.679481, lng: -79.625636},
-        map,
-        label: "3",
-        });
-      new google.maps.Marker({
-        position: { lat: 48.569819, lng: -81.374618},
-        map,
-        label: "4",
-        }); 
-       new google.maps.Marker({
-        position: { lat: 52.818330, lng: -83.907099},
-        map,
-        label: "5",
-        }); 
+        // list of marker locations
+        const locations = [
+        { lat: 43.402192, lng: -80.354693},
+        { lat: 43.543167, lng: -79.694334},
+        { lat: 43.679481, lng: -79.625636},
+        { lat: 48.569819, lng: -81.374618},
+        { lat: 52.818330, lng: -83.907099},
+        ];
+        
 
-       
       }
     </script>
   </head>

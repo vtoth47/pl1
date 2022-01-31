@@ -66,6 +66,23 @@
         map,
         label: "5",
         }); 
+        
+        const content1 =
+              "<h1>Home</h1>"
+              "<p>This is where I live in Cambridge, ON</p>"
+        
+        const infowindow = new google.maps.InfoWindow({
+          content: content1,
+          maxWidth: 400,
+        });
+       
+        marker.addListener("click", () => {
+          infowindow.open({
+            anchor: marker,
+            map,
+            shouldFocus: false,
+          });
+        });
       }
     </script>
   </head>

@@ -19,7 +19,7 @@
       }
 
         // list of marker locations
-        const locations = [
+        const location = [
         { lat: 43.402192, lng: -80.354693},
         { lat: 43.543167, lng: -79.694334},
         { lat: 43.679481, lng: -79.625636},

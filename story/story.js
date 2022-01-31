@@ -41,7 +41,7 @@ function initMap() {
         content: "<div class=infowindow><h1>Pearson Airport</h1></div>"
     });  
     google.maps.event.addListener(marker3, 'click', function() {
-      infowindow3.open(map,marker3);
+        infowindow3.open(map,marker3);
     });
 
 // marker 4
@@ -51,7 +51,7 @@ function initMap() {
       label: "4",
       }); 
     var infowindow4 = new google.maps.InfoWindow({
-            content: "<div class=infowindow><h1>Timmins Airport</h1></div>"
+        content: "<div class=infowindow><h1>Timmins Airport</h1></div>"
     });  
     google.maps.event.addListener(marker4, 'click', function() {
         infowindow4.open(map,marker4);

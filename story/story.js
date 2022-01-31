@@ -13,7 +13,9 @@ function initMap() {
       var infowindow1 = new google.maps.InfoWindow({
             content: "<div class=infowindow><h1>Home</h1></div>"
       });  
-      google.maps.event.addListener(marker1, 'click', infoCallback(infowindow1, marker1));
+      google.maps.event.addListener(marker1, 'click', function() {
+        infowindow1.open(map,marker);
+      });
       
       var marker2 = new google.maps.Marker({
         position: { lat: 43.543167, lng: -79.694334},
@@ -23,7 +25,9 @@ function initMap() {
       var infowindow2 = new google.maps.InfoWindow({
             content: "<div class=infowindow><h1>Parents</h1></div>"
       });  
-      google.maps.event.addListener(marker2, 'click', infoCallback(infowindow2, marker2));      
+      google.maps.event.addListener(marker2, 'click', function() {
+        infowindow2.open(map,marker);
+      });    
       
       const marker3 = new google.maps.Marker({
         position: { lat: 43.679481, lng: -79.625636},

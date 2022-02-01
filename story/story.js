@@ -1,3 +1,5 @@
+// Info window code template from: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple-max#:~:text=%2F%2F%20The%20maximum%20width%20of,is%20set%20to%20200%20pixels.
+
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 47.506, lng: -86.512 },

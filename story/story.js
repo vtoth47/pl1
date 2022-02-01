@@ -12,7 +12,7 @@ function initMap() {
       label: "1",
       });
     var infowindow1 = new google.maps.InfoWindow({
-        content: "<h2>Home</h2><img src='https://www.cambridge.ca/en/images/structure/logo.svg' alt='Cambridge Logo'>"
+        content: "<h2>Home</h2><p>This is where I call home.</p><img src='https://www.cambridge.ca/en/images/structure/logo.svg' alt='Cambridge Logo'>"
     });  
     google.maps.event.addListener(marker1, 'click', function() {
         infowindow1.open(map,marker1);
@@ -25,7 +25,7 @@ function initMap() {
       label: "2",
       });
     var infowindow2 = new google.maps.InfoWindow({
-        content: "<div class=infowindow><h1>Parents</h1></div>"
+        content: "<h2>Parents</h2><p>My former home, and also where I would drop off my dog for the 2 weeks I was away at work</p>"
     });  
     google.maps.event.addListener(marker2, 'click', function() {
         infowindow2.open(map,marker2);

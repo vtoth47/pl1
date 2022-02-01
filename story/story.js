@@ -12,7 +12,7 @@ function initMap() {
       label: "1",
       });
     var infowindow1 = new google.maps.InfoWindow({
-        content: "<div class=infowindow><h1>Home</h1></div><div><img src='https://www.cambridge.ca/en/images/structure/logo.svg' alt='Cambridge Logo'></div>"
+        content: "<h2>Home</h1><img src='https://www.cambridge.ca/en/images/structure/logo.svg' alt='Cambridge Logo'>"
     });  
     google.maps.event.addListener(marker1, 'click', function() {
         infowindow1.open(map,marker1);

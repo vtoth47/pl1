@@ -38,7 +38,7 @@ function initMap() {
       label: "3",
       });
     var infowindow3 = new google.maps.InfoWindow({
-        content: "<div class=infowindow><h1>Pearson Airport</h1></div>"
+        content: "<h2>Pearson Airport</h2><p>I would typically catch the 8:45AM flight from YYZ to YTS aboard an Air Canada Dash 8.</p><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Air_Canada_Express_De_Havilland_Canada_DHC-8-301_Dash_8_C-GKTA_2_%288027593421%29.jpg/640px-Air_Canada_Express_De_Havilland_Canada_DHC-8-301_Dash_8_C-GKTA_2_%288027593421%29.jpg' alt='Dash8'>"
     });  
     google.maps.event.addListener(marker3, 'click', function() {
         infowindow3.open(map,marker3);

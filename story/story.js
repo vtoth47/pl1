@@ -73,10 +73,6 @@ function initMap() {
     });  
    
 
-
-
-
-
 }
 
 

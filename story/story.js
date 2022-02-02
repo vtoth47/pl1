@@ -86,8 +86,8 @@ function initMap() {
         path: pathCoord,
         map,
         geodesic: true,
-        strokeColor: "#EA9E20",
-        strokeOpacity: 0.5,
+        strokeColor: "#F91111",
+        strokeOpacity: 0.7,
         strokeWeight: 5,
     });
     

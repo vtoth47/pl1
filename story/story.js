@@ -71,8 +71,26 @@ function initMap() {
     google.maps.event.addListener(marker5, 'click', function() {
         infowindow5.open(map,marker5);
     });  
-   
-
+    
+// adding lines connecting the markers
+// example from https://developers.google.com/maps/documentation/javascript/shapes
+    const pathCoord = [
+        { lat: 43.402192, lng: -80.354693},
+        { lat: 43.543167, lng: -79.694334},
+        { lat: 43.679481, lng: -79.625636},
+        { lat: 48.569819, lng: -81.374618},
+        { lat: 52.818330, lng: -83.907099},
+    ];
+    
+    var linePath = new google.maps.Polyline({
+        path: pathCoord,
+        geodesic: true,
+        strokeColor: "#EA9E20",
+        strokeOpacity: 0.5,
+        strokeWeight: 5,
+    });
+    
+    
 }
 
 

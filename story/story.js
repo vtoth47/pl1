@@ -53,7 +53,7 @@ function initMap() {
       label: "4",
       }); 
     var infowindow4 = new google.maps.InfoWindow({
-        content: "<h2>Timmins Airport - YTS</h2><p>Arriving around noon, employees would wait at the airport for our flight to the mine</p><br><p>One day I was lucky enough to meet LIGHTS at the shady airport diner.</p><img src='Lights_YTS.jpg' alt='Lights'>"
+        content: "<h2>Timmins Airport - YTS</h2><p>Arriving around noon, employees would wait at the airport for our flight to the mine</p><p>One day I was lucky enough to meet LIGHTS at the shady airport diner.</p><img src='Lights_YTS.jpg' alt='Lights'>"
     });  
     google.maps.event.addListener(marker4, 'click', function() {
         infowindow4.open(map,marker4);
@@ -66,7 +66,7 @@ function initMap() {
       label: "5",
       }); 
     var infowindow5 = new google.maps.InfoWindow({
-        content: "<h2>The Mine</h2><p>Ontario's first and only open-pit diamond mine.</p><br><p>The Victor Mine was also the best mine and had the best people I've worked with in my mining career.<img src='victormine.jpg' alt='Victor Mine'>"
+        content: "<h2>The Mine</h2><p>Ontario's first and only open-pit diamond mine.</p><p>The Victor Mine was also the best mine and had the best people I've worked with in my mining career.<img src='victormine.jpg' alt='Victor Mine'>"
     });  
     google.maps.event.addListener(marker5, 'click', function() {
         infowindow5.open(map,marker5);

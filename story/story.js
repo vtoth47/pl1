@@ -66,7 +66,7 @@ function initMap() {
       label: "5",
       }); 
     var infowindow5 = new google.maps.InfoWindow({
-        content: "<h2>The Mine</h2><p>Ontario's first and only open-pit diamond mine.</p><p>The Victor Mine was also the best mine and had the best people I've worked with in my mining career.</p><img src='victormine.JPG' alt='Victor Mine'>"
+        content: "<h2>The Mine</h2><p>Ontario's first and only open-pit diamond mine.</p><p>The Victor Mine was also the best mine and had the best people I've worked with in my mining career.</p><img src='victormine.jpg' alt='Victor Mine'>"
     });  
     google.maps.event.addListener(marker5, 'click', function() {
         infowindow5.open(map,marker5);

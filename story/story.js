@@ -84,14 +84,14 @@ function initMap() {
     
     var linePath = new google.maps.Polyline({
         path: pathCoord,
+        map,
         geodesic: true,
         strokeColor: "#EA9E20",
         strokeOpacity: 0.5,
         strokeWeight: 5,
     });
     
-    linePath.setMap(map);
-    
+        
 }
 
 

@@ -90,6 +90,7 @@ function initMap() {
         strokeWeight: 5,
     });
     
+    linePath.setMap(map);
     
 }
 
